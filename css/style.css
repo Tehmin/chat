@@ -21,3 +21,6 @@ h3{
  box-shadow:0 0 4px 2px #444;
     background-color: #eee;
 }
+.tab-content .mb-sm-0.input-group{
+    margin-bottom: 20px !important;
+}
