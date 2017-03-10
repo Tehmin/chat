@@ -106,6 +106,7 @@ chat
 }
 .chat .chat-header img {
     float: left;
+    border-radius: 50%;
 }
 .chat .chat-header .chat-about {
     float: left;
@@ -248,4 +249,7 @@ ul {
 button.send-message{
     background-color: #6A6C75;
     color: #fff;
+}
+.activ_user{
+    background: #6A6C75;
 }
