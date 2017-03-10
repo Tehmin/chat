@@ -75,10 +75,13 @@ chat
     height: 770px;
 }
 .people-list ul li {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 3px;
 }
 .people-list img {
     float: left;
+    border-radius: 50%;
 }
 .people-list .about {
     float: left;
