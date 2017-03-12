@@ -1,24 +1,24 @@
 
-jQuery('document').ready(function()
-{
+jQuery('document').ready(function() {
     // name validation
     var nameregex = /^[a-zA-Z ]+$/;
 
-    jQuery.validator.addMethod("validname", function( value, element ) {
-        return this.optional( element ) || nameregex.test( value );
+    jQuery.validator.addMethod("validname", function (value, element) {
+        return this.optional(element) || nameregex.test(value);
     });
 
     // valid email pattern
     var eregex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-    jQuery.validator.addMethod("validemail", function( value, element ) {
-        return this.optional( element ) || eregex.test( value );
+    jQuery.validator.addMethod("validemail", function (value, element) {
+        return this.optional(element) || eregex.test(value);
     });
 
-    jQuery("#register-form").validate({
 
-        rules:
-            {
+    jQuery("form").each(function () {
+        jQuery(this).validate({
+
+            rules: {
                 name: {
                     required: true,
                     validname: true,
@@ -38,8 +38,7 @@ jQuery('document').ready(function()
                     equalTo: '#password'
                 }
             },
-        messages:
-            {
+            messages: {
                 name: {
                     required: "Please Enter User Name",
                     validname: "Name must contain only alphabets and space",
@@ -49,29 +48,30 @@ jQuery('document').ready(function()
                     required: "Please Enter Email Address",
                     validemail: "Enter Valid Email Address"
                 },
-                password:{
+                password: {
                     required: "Please Enter Password",
                     minlength: "Password at least have 6 characters"
                 },
-                cpassword:{
+                cpassword: {
                     required: "Please Retype your Password",
                     equalTo: "Password Did not Match !"
                 }
             },
-        errorPlacement : function(error, element) {
-            jQuery(element).closest('.form-group').find('.help-block').html(error.html());
-        },
-        highlight : function(element) {
-            jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-            jQuery(element).closest('.form-group').removeClass('has-error').addClass('has-success');
-            jQuery(element).closest('.form-group').find('.help-block').html('');
-        },
+            errorPlacement: function (error, element) {
+                jQuery(element).closest('.form-group').find('.help-block').html(error.html());
+            },
+            highlight: function (element) {
+                jQuery(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                jQuery(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+                jQuery(element).closest('.form-group').find('.help-block').html('');
+            },
 
-        submitHandler: function(form) {
-            form.button();
-            alert('ok');
-        }
-    });
+            submitHandler: function (form) {
+                form.button();
+                alert('ok');
+            }
+        });
+    })
 })
