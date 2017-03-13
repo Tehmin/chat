@@ -1,5 +1,4 @@
-
-jQuery('document').ready(function() {
+jQuery('document').ready(function () {
     // name validation
     var nameregex = /^[a-zA-Z ]+$/;
 
@@ -69,8 +68,26 @@ jQuery('document').ready(function() {
             },
 
             submitHandler: function (form) {
-                form.button();
-                alert('ok');
+                //form.button();
+                //alert('ok');
+                var formData = $(form).serialize();
+
+                $.ajax({
+                    url: "registration.php",
+                    type: "POST",
+                    dataType: "json",
+                    data: formData,
+                    success: function (data) {
+                        //console.log(data);
+                        $(".username").val('');
+                        $(".email").val('');
+                        $(".password").val('');
+                        $(".re_password").val('');
+                    },
+                    error: function () {
+                        //alert('error')
+                    }
+                })
             }
         });
     })
