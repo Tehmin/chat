@@ -1,12 +1,16 @@
 <?php
 try {
-    $db = new PDO("mysql:host=localhost;dbname=chat", "root", "");
+
+    $options = array(
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    );
+    $db = new PDO("mysql:host=localhost;dbname=chat", "root", "", $options);
 } catch (PDOException $error) {
     file_put_contents('error_logs', $error->getMessage());
 }
 
 
-//$count = $db->exec("INSERT INTO users(username, email) VALUES ($name, $email)");
 
 if (isset($_POST['register'])) {
     try {
@@ -15,13 +19,8 @@ if (isset($_POST['register'])) {
         $select->bindParam(":username", $_POST['username'], PDO::PARAM_STR);
         $select->bindParam(":email", $_POST['email'], PDO::PARAM_STR);
         $select->bindParam(":password", $_POST['password'], PDO::PARAM_STR);
+        $select->execute();
 
-
-        if ($select->execute()) {
-            echo "Registered";
-        } else {
-            echo "Query could not execute!";
-        }
 
     } catch (PDOException $e) {
         echo $e->getMessage();
