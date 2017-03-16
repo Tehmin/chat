@@ -1,0 +1,11 @@
+<?php
+try {
+
+    $options = array(
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    );
+    $db = new PDO("mysql:host=localhost;dbname=chat", "root", "", $options);
+} catch (PDOException $error) {
+    file_put_contents('error_logs', $error->getMessage());
+}
