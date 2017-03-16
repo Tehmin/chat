@@ -213,21 +213,21 @@
 
 <script>
 
-$(function(){
-    $('ul.userlist').find('li').on('click', function () {
-        var name=$(this).find('div.name').text();
-        var img=$(this).find('img').attr('src');
+    $(function(){
+        $('ul.userlist').find('li').on('click', function () {
+            var name=$(this).find('div.name').text();
+            var img=$(this).find('img').attr('src');
 
 
-        $('.chat-header').find('img').attr('src', img);
-        $('.chat-header').find('.chat-with').text('Chat with '+name);
+            $('.chat-header').find('img').attr('src', img);
+            $('.chat-header').find('.chat-with').text('Chat with '+name);
 
-        $('ul.userlist').find('li').removeClass('activ_user');
-        $(this).addClass('activ_user');
+            $('ul.userlist').find('li').removeClass('activ_user');
+            $(this).addClass('activ_user');
 
 
-    })
-});
+        })
+    });
 
 
 </script>

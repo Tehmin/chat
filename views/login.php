@@ -22,10 +22,10 @@
                     <form role="form" method="post" action="">
                         <div class="form-group">
                             <div>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
-                                <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-                                <input type="text" name="email" class="form-control email" id="email" placeholder="Email">
-                            </div>
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
+                                    <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+                                    <input type="text" name="email" class="form-control email" id="email" placeholder="Email">
+                                </div>
                                 <div>
                                     <span class="help-block"></span>
                                 </div>
@@ -33,10 +33,10 @@
                         </div>
                         <div class="form-group">
                             <div>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
-                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
-                                <input type="password" name="password" class="form-control password" id="" placeholder="Password">
-                            </div>
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
+                                    <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                    <input type="password" name="password" class="form-control password" id="" placeholder="Password">
+                                </div>
                                 <div>
                                     <span class="help-block"></span>
                                 </div>
@@ -63,10 +63,10 @@
                         </div>
                         <div class="form-group">
                             <div>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
-                                <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-                                <input type="text" name="email" class="form-control email"  placeholder="Email">
-                            </div>
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
+                                    <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+                                    <input type="text" name="email" class="form-control email"  placeholder="Email">
+                                </div>
                                 <div>
                                     <span class="help-block"></span>
                                 </div>
@@ -74,10 +74,10 @@
                         </div>
                         <div class="form-group">
                             <div>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
-                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
-                                <input type="password" name="password" class="form-control password" id="password" placeholder="Password">
-                            </div>
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
+                                    <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                    <input type="password" name="password" class="form-control password" id="password" placeholder="Password">
+                                </div>
                                 <div>
                                     <span class="help-block"></span>
                                 </div>
@@ -85,10 +85,10 @@
                         </div>
                         <div class="form-group">
                             <div>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
-                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
-                                <input type="password" name="password" class="form-control re_password" placeholder="Confirm Password">
-                            </div>
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
+                                    <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                    <input type="password" name="password" class="form-control re_password" placeholder="Confirm Password">
+                                </div>
                                 <div>
                                     <span class="help-block"></span>
                                 </div>
