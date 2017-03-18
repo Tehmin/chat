@@ -7,7 +7,7 @@ class Users
     private $db;
     function __construct()
     {
-        $obj = new Db();
+        $obj = new Database();
         $this->db=$obj->connect();
     }
 
