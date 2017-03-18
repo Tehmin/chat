@@ -8,7 +8,7 @@ class Users
     function __construct()
     {
         $obj = new Db();
-        $this->db = $obj->connect();
+        $this->db=$obj->connect();
     }
 
     function registration(){
