@@ -20,6 +20,7 @@
                 <div id="login" class="tab-pane fade in active">
                     <h3 style="text-align: center">Log In</h3>
                     <form role="form" method="post" action="">
+                        <input name="ajax" value="login" type="hidden">
                         <div class="form-group">
                             <div>
                                 <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">
@@ -50,6 +51,7 @@
                 <div id="register" class="tab-pane fade">
                     <h3 style="text-align: center">Register for free</h3>
                     <form role="form" name="registration" class="myform" autocomplete="off" method="post" action="">
+                        <input name="ajax" value="registration" type="hidden">
                         <div class="form-group">
                             <div>
                                 <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-12">

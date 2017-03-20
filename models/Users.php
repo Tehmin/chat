@@ -42,7 +42,6 @@ class Users
         }
     }
 
-
     function isLogin(){
         return false;
     }

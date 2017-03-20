@@ -73,12 +73,18 @@ jQuery('document').ready(function () {
                 var formData = $(form).serialize();
 
                 $.ajax({
-                    url: "registration.php",
+                    url: "",
                     type: "POST",
                     dataType: "json",
                     data: formData,
                     success: function (data) {
-                        //console.log(data);
+                        console.log(data);
+                        if(data.success){
+
+
+                        }else if(data.error){
+                            alert(data.error);
+                        }
                         $(".username").val('');
                         $(".email").val('');
                         $(".password").val('');
@@ -91,4 +97,7 @@ jQuery('document').ready(function () {
             }
         });
     })
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
 })
