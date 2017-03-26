@@ -16,15 +16,14 @@ if(isset($_POST["ajax"])){
     $action=$_POST["ajax"];
     if(method_exists($user, $action)){
         $user->$action();
-        $response = ["success" => $action];
+       $response = ["success" => $action];
     }else{
         $response = ["error" => "Method don't exists"];
     }
 
-
     $json = json_encode($response);
-    echo $json;
-    exit;
+     echo $json;
+       exit;
 }
 
 if($user->isLogin()){
