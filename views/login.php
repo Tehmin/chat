@@ -107,11 +107,11 @@
 </div>
 
 <script src="js/jquery.js"></script>
-<script src="js/my_jquery.js"></script>
+<
 <script src="js/jquery.validate.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/my_js.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

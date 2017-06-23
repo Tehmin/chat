@@ -1,1 +1,1 @@
-SQLSTATE[HY000] [1049] Unknown database 'chaty'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sevak10@mail.ru' for key 'uniq_email'
